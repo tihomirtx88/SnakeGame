@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="bg">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101c17">
+  <title>Змия · Snake Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header><span class="brand">● ARCADE / 01</span><span class="tag">Класиката се завръща</span></header>
+    <section class="heading"><div><p class="eyebrow">МАЛКО НОСТАЛГИЯ. ОЩЕ ЕДИН ОПИТ.</p><h1>Змия<span>.</span></h1><p class="intro">Хапвай. Расти. Не се оплитай.</p></div><div class="scores"><div><span>РЕЗУЛТАТ</span><strong id="score">0</strong></div><div><span>РЕКОРД</span><strong id="best">0</strong></div></div></section>
+    <section class="game" aria-label="Игрално поле"><canvas id="board" width="600" height="600" aria-label="Змия: използвай стрелките или WASD"></canvas><div class="overlay" id="overlay"><span class="badge" id="badge">ГОТОВ ЛИ СИ?</span><h2 id="message">Още една хапка.</h2><p id="hint">Събери плодовете и пази опашката.</p><button id="start">Започни игра <span>↗</span></button></div></section>
+    <div class="toolbar"><span id="status" role="status">Очакваме първата хапка</span><button id="pause" class="quiet" disabled>Пауза ⏸</button></div>
+    <nav class="controls" aria-label="Управление"><button data-direction="up" aria-label="Нагоре">↑</button><div><button data-direction="left" aria-label="Наляво">←</button><button data-direction="down" aria-label="Надолу">↓</button><button data-direction="right" aria-label="Надясно">→</button></div></nav>
+    <footer><span><kbd>↑</kbd><kbd>←</kbd><kbd>↓</kbd><kbd>→</kbd> или WASD за движение</span><span><kbd>Space</kbd> пауза</span></footer>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
